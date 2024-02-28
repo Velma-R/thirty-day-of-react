@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>30 Days Of React</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+
+    <main id="main-doc">
+        <nav id="navbar">
+            <header>Introduction To React</header>
+
+            <ul class="first-ul">
+                <li class="first-li"><a class="nav-link first"  href="#what_is_react">What is React</a></li>
+                <li  class="first-li"><a class="nav-link first" href="#how_do_we_write_it">How do we write it</a></li>
+                  <li class="first-li"><a class="nav-link" href="#how_does_it_work">How does it work</a></li>
+                  <li class="first-li"><a class="nav-link" href="#what_is_JSX">What is JSX</a></li>
+                  <li class="first-li"><a class="nav-link" href="#rendering_list">Rendering list</a></li>
+
+            </ul>
+            
+        </nav>
+
+        <section class="main-section" id="what_is_react">
+            <header>
+                What is react
+                
+            </header>
+            <article class="art">
+              <p class="par-1">React is JavaScript library for building user interfaces .It is the view layer for web.</p>
+              <p class="par-1">At the heart of all React applications are components.</p>
+              <p class="par-1">A component is a self -contained module that renders some output </p>
+              <p class="par-1">Components  are composable.A component might imnclude one or more other components in its output.</p>
+              <p class="par-1">To write a React Appswe write react compmonents that corresponds to various interface elements.</p>
+              <p class="par-1">For example take a form,A form may consist of many interface elements,like input fileds,label.or buttons.Each element inside a form can be written as a react component.</p>
+              <p class="par-1">Each component in a React app abides by strict data management principles.Complex,interactive yser interfaces often involve complex data and application state.</p>
+              <p class="par-1">The surface area of react is limited and aimed at giving us tools to able to anticipate how application looks with a given set of circumstances.</p>
+              <p class="par-1">React is a javascript framework.Using framework is as simple as including a javascrit file in our HTML and using react export in our application's Javascript.</p>
+              <p class="par-1">For instance , the hello world in react can be as follow in this code .</p>
+              <div class="code_1">
+                <code>ReactDOM.render(
+                  <h1>Hello world</h1>,
+                  document.querySelector('#app')
+                  );</code>
+              <code>export default function MyApp() {
+                  return (
+                    <div>
+                      <h1>Welcome to my app</h1>
+                      <MyButton />
+                    </div>
+                  );
+                }</code>
+              <code>function MyButton() {
+                  return (
+                    <button>
+                      I'm a button
+                    </button>
+                  );
+                }</code>
+              <code>export default function MyApp() {
+                  return (
+                    <div>
+                      <h1>Welcome to my app</h1>
+                      <MyButton />
+                    </div>
+                  );
+                }</code>
+              <code>function MyButton() {
+                  return (
+                    <button>I'm a button</button>
+                  );
+                }</code>
+              <ul>
+                  <li>1</li>
+                  <li>2</li>
+                  <li>3</li>
+                  <li>4</li>
+                  <li>5</li>
+              </ul>
+              </div>
+
+             
+            </article>
+            </section>
+        
+
+
+        
+        <section class="main-section" id="how_do_we_write_it">
+          <header>
+            How do we write it
+          </header>
+          <article class="art">
+            <p class="par-1">React is a Javascript  framework</p>
+            <p class="par-1">Using framework is simple as including a Javascript file in HTML and using react exports in javascript application.</p>
+            <p class="par-1"><i>Hello world</i> is an example </p>
+            <div class="code_1">
+              <code>
+                const root = ReactDOM.createRoot(document.getElementById('root'));
+root.render(<h1>Hello, world!</h1>);
+
+              </code> 
+            </div>
+            
+          </article>
+        </section>
+
+
+        <section class="main-section" id="how_does_it_work">
+          <header>
+            How does it work
+          </header>
+          <article class="art">
+            <p class="par-1">React operate not directly on the browser's Document Object Model(DOM)immediately,but on a  virtual DOM</p>
+            <p class="par-1">When we write a react component,we are not writing directly to the DOM, but we are writing a virtual component that React will turn into the DOM.</p>
+            <p class="par-1">Rather than manipulating the <em style="color:pink">document</em> in a browser after changes to our data(which can be quite slow) it resolves changes on a DOM built and run entirely in memory. </p>
+            <div class="code_1">
+              <code>document.querySelector(".example");</code>
+            </div>
+
+          </article>
+
+        </section>
+        <section class="main-section" id="what_is_JSX">
+          <header>What is JSX</header>
+          <article class="art">
+            <p class="par-1">JSX is a syntax extension for JavaScript that lets you write HTML-like markup inside a JavaScript file</p>
+            <p class="par-1">JSX and React are two separate things. They’re often used together, but you can use them independently of each other. </p>
+            <p class="par-1"><strong>JSX is a syntax extension, while React is a JavaScript library.</strong></p>
+            <p class="par-1">React component is a JavaScript function that may contain some markup that React renders into the browser</p>
+            <p class="par-1">React components use a syntax extension called JSX to represent that markup. </p>
+            <p class="par-1">JSX looks a lot like HTML, but it is a bit stricter and can display dynamic information</p>
+            <p class="par-1">The best way to understand this is to convert some HTML markup to JSX markup</p>
+            <p class="par-1">JSX will throw an error if the HTML is not correct, or if the HTML misses a parent element.</p>
+            <div class="code_1">
+              <code>
+                import React from 'react';
+import ReactDOM from 'react-dom/client';
+
+const myElement = <h1>I Love JSX!</h1>;
+
+const root = ReactDOM.createRoot(document.getElementById('root'));
+root.render(myElement);
+              </code>
+              <br>
+              <br>
+              <p>Without JSX <code>import React from 'react';
+                import ReactDOM from 'react-dom/client';
+                
+                const myElement = React.createElement('h1', {}, 'I do not use JSX!');
+                
+                const root = ReactDOM.createRoot(document.getElementById('root'));
+                root.render(myElement);</p></code>
+
+            </div>
+          </article>
+        </section>
+        <section class="main-section"id="rendering_list">
+          <header>Rendering list</header>
+          <article class="art">
+            <p class="par-1">You will rely on JavaScript features like for loop and the array map() function to render lists of components.</p>
+            <p class="par-1">Inside your component, use the map() function to transform an array of products into an array of list items</p>
+            <p class="par-1">For each item in a list, you should pass a string or a number that uniquely identifies that item among its siblings</p>
+            <p class="par-1"> React uses your keys to know what happened if you later insert, delete, or reorder the items.</p>
+            <div class="code_1">
+              <code>const products = [
+                { title: 'Cabbage', id: 1 },
+                { title: 'Garlic', id: 2 },
+                { title: 'Apple', id: 3 },
+              ];</code>
+              <br>
+
+              <code>
+                const listItems = products.map(product =>
+  <li key={product.id}>
+    {product.title}
+  </li>
+);
+
+return (
+  <ul>{listItems}</ul>
+);
+              </code>
+
+            </div>
+            
+
+          </article>
+        </section>
+        
+
+        
+
+
+
+    </main>
+    
+</body>
+</html>

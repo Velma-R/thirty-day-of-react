@@ -1,0 +1,266 @@
+*,html{
+    margin:0;
+    padding:0;
+    scroll-behavior: smooth;
+}
+body{
+    background-image: linear-gradient(45deg, #74cb1d 0%, #5050b1 35%, #00d4ff 100%);
+    font-weight: 500;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    display:flex;
+    flex-direction: row;
+    min-height: 100vh;
+
+    
+  
+}
+ 
+#main-doc{
+    margin-block-end: 40px;
+    height :100vh;
+    padding-inline-end: 12px;
+    
+
+}
+.main-section{
+    width:80%;
+    margin: 0 180px 0 200px;
+}
+
+
+header{
+    font-weight: bolder;
+    line-height:2cm;
+    text-align: center;
+    text-decoration: underline;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 20px;
+    padding-bottom:12px;
+    white-space:space-collapse;
+    
+    
+
+}
+p{
+    font-family:Arial, Helvetica, sans-serif;
+    padding: 10px;
+    
+}
+
+#navbar{
+    text-decoration: none;
+    top: 0;
+    position:relative;
+    height: 100vh;
+    width: 20%;
+    text-align:left;
+    padding: 20px;
+    margin-right: 20px;
+    padding-top: 10px;
+    border:1px solid black;
+    background:blue;
+    
+}
+
+
+.nav-link{
+    
+    color:white;
+    text-decoration:none;
+    border: 1px solid black ;
+    display: flex;
+    justify-content: space-between;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    padding-left: 0.5rem;
+    height:2rem;
+
+   
+
+
+}
+
+.first-ul{
+    padding-top: 2rem;
+    top:10;
+}
+li{
+    text-decoration: none;
+    list-style: none;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    letter-spacing: 1px;
+   
+}
+.first-li{
+    margin-bottom: 0.5rem;
+}
+.code_1{
+    display: flex;
+    background-color: grey;
+    align-items: center;
+    width: 105%;  
+    text-align: left;
+    word-spacing:0.05em;
+    font-family:Arial, Helvetica, sans-serif;
+    color:#31304D;
+    font-size: 20px;
+    padding-bottom: 2rem;
+    margin-bottom: 2rem;
+}
+/* mobiledevices */
+@media only screen and (min-width: 600px) {
+    body {
+        flex-direction: column;
+       
+
+    }
+    #navbar{
+        position: fixed;
+        width:30%;
+    }
+    
+ 
+    .main-section{
+        margin-left:4rem;
+        width:70%;
+        margin-right: 2rem;
+        padding-right: 3rem;
+        padding-left: 3rem;;
+
+
+    }
+    .code_1{
+        margin-left: 2rem;
+        width:65%;
+        padding-left:5rem;
+        padding-right: 2rem;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: auto;
+        justify-items: auto;
+        
+        
+        
+        
+        
+    }
+    .art{
+        padding-left:3rem;
+        padding-right:3rem;
+    }
+    .par-1{
+        margin-left:6rem;
+        margin-right: 2rem;
+
+    }
+   
+  }
+/* tablet */
+@media only screen and(min-device-width:786px){
+    body {
+        flex-direction: column;
+       
+
+    }
+    #navbar{
+        position: fixed;
+        width:30%;
+    }
+    
+ 
+    .main-section{
+        margin-left:4rem;
+        width:70%;
+        margin-right: 2rem;
+        padding-right: 3rem;
+        padding-left: 3rem;;
+
+
+    }
+    .code_1{
+        margin-left: 2rem;
+        width:65%;
+        padding-left:5rem;
+        padding-right: 2rem;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: auto;
+        justify-items: auto;
+        
+        
+        
+        
+        
+    }
+    .art{
+        padding-left:3rem;
+        padding-right:3rem;
+    }
+    .par-1{
+        margin-left:6rem;
+        margin-right: 2rem;
+
+    }
+   
+  }
+
+
+
+/* desktop */
+@media (max-width: 1024px) {   
+    body {     
+        display: grid;
+      grid-template-columns: repeat(3, 1fr);     
+      gap: 50px; 
+    }  
+    #navbar{
+        position: fixed;
+        width:30%;
+
+    }
+    
+ 
+    .main-section{
+        margin-left:4rem;
+        width:70%;
+        margin-right: 2rem;
+        padding-right: 3rem;
+        padding-left: 6rem;
+        
+
+
+    }
+    .code_1{
+        margin-left: 2rem;
+        width:65%;
+        padding-left:5rem;
+        padding-right: 2rem;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: auto;
+        justify-items: auto;
+        
+        
+        
+        
+        
+    }
+    .art{
+        padding-left:3rem;
+        padding-right:3rem;
+    }
+    .par-1{
+        margin-left:6rem;
+        margin-right: 2rem;
+
+    }
+   
+  }
+
+
+/* .first{
+    color:white;
+    text-align: center;
+    padding-top: 2rem;
+} */
+
